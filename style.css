@@ -5,6 +5,7 @@ body{
     padding: 0px;
     margin-top: 70px;
 
+
 }
 
 .initital-container{
@@ -612,13 +613,32 @@ margin: 20px 0px;
     color: #000000;
 }
 
+footer{
+    display: none;
+}
+
+@media screen and (min-width: 901px) and (max-width: 1100px) {
+    .jobs-bottom-cont{
+        justify-content: space-evenly;
+
+    }
+    .second-one{
+        display: none;
+    }
+    .companies-items{
+        justify-content: center;
+    }
+}
+
 @media screen and (max-width :900px) {
     body{
         padding: 0px;
         max-width: 100vw;
+                    margin-bottom: 70px;
     }
     header{
         max-width: 100vw;
+        position: absolute;
     }
     nav{
         display: none;
@@ -633,6 +653,7 @@ margin: 20px 0px;
     }
     .main-first-left-cont{
         width: 100%;
+
         display: flex;
         flex-direction: column;
 
@@ -640,9 +661,20 @@ margin: 20px 0px;
         align-items: center;
     }
     .search-jobs-reg-cont{
-        width: 80% ;
-
+        width: 94% ;
+        margin: 0px;
+        padding: 0px;
+        align-self: flex-start;
     }
+
+    .search-jobs-reg-cont-one{
+        width: 50%;
+    }
+
+    .search-jobs-reg-cont-two{
+        width: 50% !important;
+    }
+
     .main-jobs-companies-cont{
         flex-direction: column;
     }
@@ -655,24 +687,20 @@ margin: 20px 0px;
     }
 
     .main-first-right-cont{
-        width: 90%;
+        width: auto;
     }
+
     .jobs-bottom-cont{
+        justify-content: space-evenly;
+        padding: 0px;
+        
+    }
 
-        justify-content: center;
-    }
-    .left-arrow{
-
-        margin-right: 5vw;
-    }
-    .right-arrow{
-        margin-left: 5vw;
-    }
     .main-download-count-cont{
         flex-direction: column;
     }
     .jobs-perfomances{
-        width: 90%;
+        width: auto;
         flex-direction: row;
     }
     .download-app-cont{
@@ -681,15 +709,36 @@ margin: 20px 0px;
     .locations-cont{
         width: 100% ;
     }
+    footer{
+        display: flex;
+        justify-content: space-evenly;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        align-items: center;
+        padding: 10px 0px;
+    }
+    footer i{
+        font-size: 24px;
+    }
+    footer div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer p{
+        margin: 4px 0px 0px 0px;
+        font-size: 12px;
+        font-weight: 500;
+    }
 }
 
 @media screen and (max-width: 500px) {
-    header{
-        position: fixed;
-
-    }
     body{
         width: 100vw;
+
     }
     .search-jobs-reg-cont{
         display: flex;
@@ -713,10 +762,24 @@ margin: 20px 0px;
     }
     .jobs-perfomances{
         flex-wrap: wrap;
-        width: 85%;
+        width: 100%;
+        margin: 0px;
+        padding-top: 24px;
+        justify-content: space-evenly;
+        padding-bottom: 10px;
+
+
+    }
+    .jobs-perfomances div{
+
+        margin: 0px;
+    }
+    .jobs-perfomances h1{
+        margin-top: 0px;
+        font-size: 12px !important;
     }
     .jobs-perfomances p{
-        font-size: 24px;
+        font-size: 20px !important;
     }
     .second-one{
         display: none;
@@ -731,7 +794,21 @@ margin: 20px 0px;
     .main-bottom-cont div{
         order: 1;
     }
-    .main-bottom-cont div{
+    .main-bottom-cont h1{
         order: 2;
+    }
+    .download-app-cont
+    {
+
+        justify-content: center;
+        align-items: center;
+    }
+    .download-app-cont-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-bottom-cont h1{
+        width: 100% !important;
     }
 }
