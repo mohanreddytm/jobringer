@@ -4,11 +4,15 @@ body{
     margin: 0px;
     padding: 0px;
     margin-top: 70px;
+
 }
 
 .initital-container{
     display: flex;
     flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
 }
 
 .main-cont{
@@ -27,6 +31,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
+
     height: 60px;
 }
 
@@ -645,7 +650,7 @@ margin: 20px 0px;
         width: 100%;
         justify-content: center;
         align-items: center;
-        background-color: pink;
+        /* background-color: pink; */
         margin-right: 0px;
     }
 
@@ -676,15 +681,13 @@ margin: 20px 0px;
     .locations-cont{
         width: 100% ;
     }
-.main-cont{
-    background-color: pink !important;
-}
-.main-first-cont{
-    background-color: green;
-}
 }
 
 @media screen and (max-width: 500px) {
+    header{
+        position: fixed;
+
+    }
     body{
         width: 100vw;
     }
@@ -698,9 +701,9 @@ margin: 20px 0px;
         height: auto;
     }
     .search-jobs-reg-cont-one{
-                min-width: 90%;
+        min-width: 90%;
         max-width: 100%;
-                margin: 0px;
+        margin: 0px;
     }
     .search-jobs-reg-cont-two{
         min-width: 100%;
@@ -710,6 +713,7 @@ margin: 20px 0px;
     }
     .jobs-perfomances{
         flex-wrap: wrap;
+        width: 85%;
     }
     .jobs-perfomances p{
         font-size: 24px;
