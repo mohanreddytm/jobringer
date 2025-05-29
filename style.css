@@ -683,3 +683,51 @@ margin: 20px 0px;
     background-color: green;
 }
 }
+
+@media screen and (max-width: 500px) {
+    body{
+        width: 100vw;
+    }
+    .search-jobs-reg-cont{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0px;
+        align-self: flex-start;
+        /* background-color: yellow; */
+        height: auto;
+    }
+    .search-jobs-reg-cont-one{
+                min-width: 90%;
+        max-width: 100%;
+                margin: 0px;
+    }
+    .search-jobs-reg-cont-two{
+        min-width: 100%;
+        max-width: 100%;
+        margin: 0px;
+        margin-top: 10px;
+    }
+    .jobs-perfomances{
+        flex-wrap: wrap;
+    }
+    .jobs-perfomances p{
+        font-size: 24px;
+    }
+    .second-one{
+        display: none;
+    }
+    .download-app-cont{
+        flex-direction: column;
+    }
+    .main-bottom-cont{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-bottom-cont div{
+        order: 1;
+    }
+    .main-bottom-cont div{
+        order: 2;
+    }
+}
